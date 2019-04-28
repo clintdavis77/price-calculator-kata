@@ -17,7 +17,7 @@ namespace price_calculator.models
 
         public Money Total()
         {
-            return Subtotal() + Tax();
+            return Subtotal() + Tax() - Discount();
         }
 
         public Money Tax()
@@ -25,6 +25,12 @@ namespace price_calculator.models
             return Product.Price * TaxRatePercent;
         }
 
+        public Money Discount()
+        {
+            return Product.Price * DiscountRatePercent;
+        }
+
         public decimal TaxRatePercent { get; set; }
+        public decimal DiscountRatePercent { get; set; }
     }
 }

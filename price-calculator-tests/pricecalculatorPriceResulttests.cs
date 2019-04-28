@@ -55,5 +55,39 @@ namespace price_calculator_tests
             // assert
             Assert.True(result == Money.USDollar(13.21));
         }
+
+        [Fact]
+        public void Discount_IsCorrect()
+        {
+            // arrange
+            var product = new Product("Widget", 12345, Money.USDollar(12.35));
+            var pr = new PriceResult();
+            pr.Product = product;
+            pr.DiscountRatePercent = 0.15M;
+
+            // act
+            var result = pr.Discount();
+
+            // assert
+            Assert.True(result == Money.USDollar(1.85));
+        }
+
+        [Fact]
+        public void TotalWithDiscountAndTax_IsCorrect()
+        {
+            // arrange
+            var product = new Product("Widget", 12345, Money.USDollar(20.25));
+            var pr = new PriceResult();
+            pr.Product = product;
+            pr.TaxRatePercent = 0.20M;
+            pr.DiscountRatePercent = 0.15M;
+
+            // act
+
+            // assert
+            Assert.True(pr.Tax() == Money.USDollar(4.05));
+            Assert.True(pr.Discount() == Money.USDollar(3.04));
+            Assert.True(pr.Total() == Money.USDollar(21.26));
+        }
     }
 }

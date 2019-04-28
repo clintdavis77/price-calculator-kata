@@ -5,7 +5,7 @@ using price_calculator.models;
 
 namespace price_calculator
 {
-    public sealed class PriceCalculator : IPriceResult, ITaxRate
+    public sealed class PriceCalculator : ITaxOrDiscountRate, ITaxRate, IDiscountRate
     {
         //private Product _product;
         private PriceResult _priceResult = new PriceResult();
@@ -15,9 +15,9 @@ namespace price_calculator
             _priceResult.Product = product;
         }
 
-        public static ITaxRate ForProduct(Product product) => new PriceCalculator(product);
+        public static ITaxOrDiscountRate ForProduct(Product product) => new PriceCalculator(product);
 
-        public IPriceResult WithTaxRate(decimal taxRatePercent)
+        public IDiscountRate WithTaxRate(decimal taxRatePercent)
         {
             _priceResult.TaxRatePercent = taxRatePercent;
             return this;
@@ -26,6 +26,12 @@ namespace price_calculator
         public PriceResult GetResult()
         {
             return _priceResult;
+        }
+
+        public ITaxRate WithDiscountRate(decimal discountRatePercent)
+        {
+            _priceResult.DiscountRatePercent = discountRatePercent;
+            return this;
         }
     }
 }
