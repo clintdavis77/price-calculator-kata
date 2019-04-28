@@ -1,14 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>price_calculator_console</RootNamespace>
+    <RootNamespace>price_calculator</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\models\models.csproj" />
-    <ProjectReference Include="..\price-calculator\price-calculator.csproj" />
   </ItemGroup>
 
 </Project>

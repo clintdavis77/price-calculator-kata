@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "price-calculator-console", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "price-calculator-tests", "price-calculator-tests\price-calculator-tests.csproj", "{8C41661D-44C7-4424-9002-52493E948D38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "price-calculator", "price-calculator\price-calculator.csproj", "{0065A553-A286-49BA-AAA2-57F213E71600}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "models", "models\models.csproj", "{BC935C0C-3E4A-4CC2-AE35-CB1EF8302FF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{8C41661D-44C7-4424-9002-52493E948D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C41661D-44C7-4424-9002-52493E948D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C41661D-44C7-4424-9002-52493E948D38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0065A553-A286-49BA-AAA2-57F213E71600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0065A553-A286-49BA-AAA2-57F213E71600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0065A553-A286-49BA-AAA2-57F213E71600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0065A553-A286-49BA-AAA2-57F213E71600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC935C0C-3E4A-4CC2-AE35-CB1EF8302FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC935C0C-3E4A-4CC2-AE35-CB1EF8302FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC935C0C-3E4A-4CC2-AE35-CB1EF8302FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC935C0C-3E4A-4CC2-AE35-CB1EF8302FF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

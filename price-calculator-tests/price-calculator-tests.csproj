@@ -13,4 +13,9 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\models\models.csproj" />
+    <ProjectReference Include="..\price-calculator\price-calculator.csproj" />
+  </ItemGroup>
+
 </Project>
