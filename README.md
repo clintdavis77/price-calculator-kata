@@ -1,5 +1,12 @@
 # Price Calculator Kata
 
+## Blog Posts
+I'm blogging about this as I go. There is a blog link for every requirement.
+
+* [Part 1](https://clintdavis.us/2019/04/price-calculator-kata-part-1/)
+* [Part 2](https://clintdavis.us/2019/04/price-calculator-kata-part-1/)
+
+
 ## Invitation
 You are invited to implement imaginary customer’s requirements listed below, using programming language of choice and applying any coding practices you wish.
 
